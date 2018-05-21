@@ -9,7 +9,7 @@ addons:
     apt:
 before_install:
 install:
-  - inspec
+  - gem install inspec
 before_script:
 script:
   - inspec check .
