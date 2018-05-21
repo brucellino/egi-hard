@@ -1,0 +1,29 @@
+---
+language: ruby
+rvm:
+  - 2.4.1
+sudo: required
+services:
+  - docker
+addons:
+    apt:
+before_install:
+install:
+  - inspec
+before_script:
+script:
+  - inspec check .
+before_cache:
+after_success:
+after_failure:
+before_deploy:
+deploy:
+after_deploy:
+after_script:
+notifications:
+  email:
+    recipients: 
+      - bruce.becker@egi.eu
+    on_success: change
+    on_failure: always
+    
