@@ -1,0 +1,12 @@
+name: EGI-SVG-CVE
+title: EGI SVG CVE
+maintainer: The Authors
+copyright: The Authors
+copyright_email: bruce.becker@egi.eu
+license: Apache-2.0
+summary: An InSpec Compliance Profile for EGI SVG CVEs
+version: 0.1.0
+supports:
+  - os-family: linux
+ 
+inspec_version: "~> 2.1"
